@@ -166,6 +166,15 @@ enable_coredns_k8s_external: false
 coredns_k8s_external_zone: k8s_external.local
 # Enable endpoint_pod_names option for kubernetes plugin
 enable_coredns_k8s_endpoint_pod_names: false
+# Additional custom section for CoreDNS config
+# coredns_k8s_custom_config: |
+#   consul:53 {
+#       cache 30
+#       errors
+#       loadbalance round_robin
+#       proxy . 100.64.0.11
+#       reload 10s
+#   }
 
 # Can be docker_dns, host_resolvconf or none
 resolvconf_mode: docker_dns

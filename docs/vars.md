@@ -68,6 +68,7 @@ following default cluster parameters:
   on the CoreDNS service.
 * *coredns_k8s_external_zone* - Zone that will be used when CoreDNS k8s_external plugin is enabled
   (default is k8s_external.local)
+* *coredns_k8s_custom_config* - Additional custom configuration for CoreDNS (default is unset)
 * *enable_coredns_k8s_endpoint_pod_names* - If enabled, it configures endpoint_pod_names option for kubernetes plugin.
   on the CoreDNS service.
 * *cloud_provider* - Enable extra Kubelet option if operating inside GCE or

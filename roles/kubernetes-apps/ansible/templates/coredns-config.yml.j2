@@ -65,3 +65,6 @@ data:
   hosts: |
    {{ dns_etchosts }}
 {% endif %}
+{% if coredns_k8s_custom_config | default(None) %}
+    {{ coredns_k8s_custom_config }}
+{% endif %}
